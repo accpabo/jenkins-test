@@ -8,7 +8,7 @@ pipeline {
                 echo "TODO: Verify GIT BRANCH"
             }
         }
-        stage('Docker Build')
+        stage('Docker Build') {
             steps {
                sh(script: 'docker images -a')
                sh(script: """
